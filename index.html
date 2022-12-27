@@ -6,22 +6,25 @@
     body {
       background-color: pink;
       align-items: center;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      overflow-y: scroll;
+      /* display: flex;
+      flex-direction: column; */
+      /* height: 100vh; */
+      /* overflow-y: scroll; */
       margin: 0;
 
     }
-    .title{
-        color:rgba(63, 63, 63, 0.769);
-    }
 
     .note {
-        width: 90vw;
-        max-width: 1200px;
+        width: 100vw;
         letter-spacing: 2px;
         line-height: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .note .text {
+        width:80%;
     }
     /* Style the image carousel */
     .carousel {
@@ -31,7 +34,6 @@
       position: relative;
       display: flex;
       width:100vw;
-      max-width: 650px;
       align-items: center;
       justify-content: center;
       flex-wrap: nowrap;
@@ -112,15 +114,20 @@
       
     <!-- Add previous and next buttons -->
     <a class="button next" onclick="plusSlides(1)">&#10095;</a>
+    
   </div>
   <div class="note">
-    <p> I just wanted to tell you how much I love looking back at our photos and memories together. Every time I see a picture of us, it brings a smile to my face and fills my heart with joy.
+    <div class="text">
+
+    
+     love looking back at our photos and memories together. Every time I see a picture of us, it brings a smile to my face and fills my heart with joy.
         
         Our journey together has been filled with so many amazing moments, and I am grateful to have you by my side. Your love and support have meant the world to me, and I can't wait to spend the rest of my life making more memories with you.
         
         I can't wait to see what the future holds for us. Thank you for being my partner, my best friend, and the love of my life.
-    </p>
-  </div>
+     </div>
+    </div>
+    
     
 
   <script>
